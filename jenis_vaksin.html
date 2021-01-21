@@ -1,0 +1,402 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- <link rel=”icon” type=”image/png” href=”img/icon.png”> -->
+  <link href="img/icon.png" rel="shortcut icon">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" >
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+
+    <title>YUK Imunisasi</title>
+  </head>
+  <body style="background-color: #f6f6f6">
+
+    <!-- navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light p-2" style="background-color: #1A9CDA;">
+    <a class="navbar-brand" href="index.html">
+        <img src="img/logo.png" width="140" class="d-inline-block align-top ml-5" alt="brand">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ml-auto font-weight-bold">
+          <li class="nav-item">
+            <a class="nav-link a" href="index.html">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link b" href="sejarah_imunisasi.html">IMUNISASI</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link c" href="jenis_vaksin.html">JENIS VAKSIN</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link d" href="penyakit.html">PENYAKIT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link e" href="tips.html">TIPS</a>
+          </li> 
+        </ul>
+      </div>
+  </nav>
+
+  <style>
+    .p-left{
+    opacity: 0;
+    transform: translate(-100px,0);
+    transition: 2s;
+    }
+    .p-left2{
+      opacity: 0;
+      transform: translate(-100px,0);
+      transition: 2s;
+    }
+    .p-left3{
+      opacity: 0;
+      transform: translate(-100px,0);
+      transition: 2s;
+    }
+    .p-left4{
+      opacity: 0;
+      transform: translate(-100px,0);
+      transition: 2s;
+    }
+    .p-right{
+      opacity: 0;
+      transform: translate(100px,0);
+      transition: 2s;
+    }
+    .p-right2{
+      opacity: 0;
+      transform: translate(100px,0);
+      transition: 2s;
+    }
+    .p-right3{
+      opacity: 0;
+      transform: translate(100px,0);
+      transition: 2s;
+    }
+
+    .p-left.tampil-gmbr1, .p-right.tampil-gmbr1{
+      opacity: 1;
+      transform: translate(0,0);
+    }
+    .p-left2.tampil-gmbr1, .p-right2.tampil-gmbr1{
+      opacity: 1;
+      transform: translate(0,0);
+    }
+    .p-left3.tampil-gmbr1, .p-right3.tampil-gmbr1{
+      opacity: 1;
+      transform: translate(0,0);
+    }
+    .p-left4.tampil-gmbr1{
+      opacity: 1;
+      transform: translate(0,0);
+    }
+
+    hr{
+      width: 150px;
+      border: solid 2px #12346B;
+      margin-left: 0px;
+    }
+
+    section.page{
+      margin-top: 60px;
+      margin-bottom: 140px;
+      /* height: 570px; */
+      /* min-height: 100px; */
+    }
+  
+
+    .persegi-panjang{ 
+      width: 280px; 
+      height: 450px; 
+      background: #5EB9E6;
+      position: absolute; 
+      top: 29px;
+      left: 40px;
+      z-index: -1;
+    }
+
+    .persegi-panjang1{ 
+      width: 276px; 
+      height: 355px; 
+      background: #5EB9E6;
+      position: absolute; 
+      top: 35px;
+      left: 40px;
+      z-index: -1;
+    }  
+    .persegi-panjang2{ 
+      width: 308px; 
+      height: 200px; 
+      background: #5EB9E6;
+      position: absolute; 
+      top: 20px;
+      left: 40px;
+      z-index: -1;
+    }
+    .persegi-panjang3{ 
+      width: 337px; 
+      height: 192px; 
+      background: #5EB9E6;
+      position: absolute; 
+      top: 20px;
+      left: 40px;
+      z-index: -1;
+    }
+    .persegi-panjang4{ 
+      width: 306px; 
+      height: 205px; 
+      background: #5EB9E6;
+      position: absolute; 
+      top: 20px;
+      left: 40px;
+      z-index: -1;
+    }
+    .persegi-panjang5{ 
+      width: 278px; 
+      height: 310px; 
+      background: #5EB9E6;
+      position: absolute; 
+      top: 20px;
+      left: 40px;
+      z-index: -1;
+    }
+    .persegi-panjang6{ 
+      width: 275px; 
+      height: 310px; 
+      background: #5EB9E6;
+      position: absolute; 
+      top: 20px;
+      left: 40px;
+      z-index: -1;
+    }
+
+    body{
+      color: #083074;
+    }
+  </style>
+
+
+<div class="container mt-5">
+    <div class="row">
+      <div class="col" style="left: 100px">
+        <h1 class="font-weight-bold">Jenis Vaksin</h1>
+        <hr>
+      </div>
+    </div>
+</div>
+
+
+  <section id="page1" class="page">
+    <div class="container my-4">
+      <div class="row">
+        <div class="col" style="margin-left: 100px">
+          <div class="persegi-panjang p-left"></div>
+          <img src="img/10.jpg" alt="Gambar" class="mb-5">
+        </div>
+
+        <div class="col-sm-10 col-md-12 col-lg-6 col-xl-7 pr-4" style="padding-right:60px">
+          <h2 class="font-weight-bold">Live Attenuated Vaccine</h2>  
+          <p class="mt-4">
+            Dari beberapa jenis vaksin ada beberapa yang disebut vaksin hidup. Salah satunya adalah vaksin hidup yang dibuat dari bakteri atau virus yang sudah dilemahkan daya virulensinya dengan cara kultur dan perlakuan yang berulang-ulang, namun masih mampu menimbulkan reaksi imunologi yang mirip dengan infeksi alamiah yang disebut dengan Live Attenuated Vaccine. 
+            <br>
+            Vaksin ini memiliki sifat seperti berikut: <br>  
+            • Vaksin dapat tumbuh dan berkembang biak sampai menimbulkan respon imun sehingga diberikan dalam bentuk dosis kecil antigen
+            <br>
+            • Respon imun yang diberikan mirip dengan infeksi alamiah, tidak perlu dosis berganda
+            <br>
+            • Dipengaruhi oleh circulating antibody sehingga ada efek netralisasi jika waktu pemberiannya tidak tepat.
+            <br>
+            • Vaksin virus hidup dapat bermutasi menjadi bentuk patogenik
+            <br>
+            • Dapat menimbulkan penyakit yang serupa dengan infeksi alamiah
+            <br>
+            • Mempunyai kemampuan proteksi jangka panjang dengan keefektifan mencapai 95%
+            <br>
+            • Virus yang telah dilemahkan dapat bereplikasi di dalam tubuh, meningkatkan dosisi asli dan berperan sebagai imunisasi ulangan 
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="page2" class="page">
+    <div class="container" style="margin-right: 0px;">
+      <div class="row">
+        <div class="col-sm-10 col-lg-6">
+          <h2 class="font-weight-bold">Inactivated vaccine</h2>  
+          <p class="mt-4">
+            Vaksin ini dibuat dari bakteri atau virus yang dimatikan dengan zat kimia (formaldehid) atau dengan pemanasan, dapat berupa seluruh bagian dari bakteri atau virus, atau bagian dari bakteri atau virus atau toksoidnya saja. Vaksin jenis ini disebut Inactivated vaccine (Killed Vaccine ) dan vaksin ini mempunyai sifat sebagai berikut:<br>
+            • Vaksin tidak dapat hidup sehingga seluruh dosis antigen dapat dimasukkan dalam bentuk antigen
+            <br>
+            • Respon imun yang timbul sebagian besar adalah humoral dan hanya sedikit atau tidak menimbulkan imunitas seluler
+            <br>
+            • Titer antibodi dapat menurun setelah beberapa waktu sehingga diperlukan dosis ulangan, dosis pertama tidak menghasilkan imunitas protektif tetapi hanya memacu dan menyiapkan system imun, respon imunprotektif baru barumuncul setelah dosis kedua dan ketiga
+            <br>
+            • Tidak dipengaruhi oleh circulating antibody
+            <br>
+            • Vaksin tidak dapat bermutasi menjadi bentuk patogenik
+            <br>
+            • Tidak dapat menimbulkan penyakit yang serupa dengan infeksi alamiah 
+          </p>
+        </div>
+        <div class="col ml-5">
+          <div class="persegi-panjang1 p-right"></div>
+          <img src="img/11.jpg" class="mt-3" alt="gambar">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="page3" class="page">
+    <div class="container my-4">
+      <div class="row">
+        <div class="col" style="margin-left: 100px">
+          <div class="persegi-panjang2 p-left2"></div>
+          <img src="img/21.jpg" alt="Gambar" width="310">
+        </div>
+
+        <div class="col-lg-6 col-xl-7 mt-md-5 mt-lg-0" style="padding-right:60px; ">
+          <h2 class="font-weight-bold">Vaksin Toksoid</h2>  
+          <p class="mt-4">
+            Vaksin yang terbuat dari beberapa jenis bakteri yang menimbulkan penyakit dengan memasukkan racun dilemahkan ke dalam aliran darah biasa disebut Vaksin Toksoid. Bahan bersifat imunogenik yang dibuat dari toksin kuman. Hasil pembuatan bahan toksoid yang jadi disebut sebagai natural fluid plain toxoid yang mampu merangsang terbentuknya antibodi antitoksin.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="page4" class="page">
+    <div class="container" style="margin-right: 0px;">
+      <div class="row">
+        <div class="col mr-5">
+          <h2 class="font-weight-bold">Vaksin Acellular dan Subunit</h2>  
+          <p class="mt-4">
+            Vaksin Acellular dan Subunit ini dibuat dari bagian tertentu dalam virus atau bakteri dengan melakukan kloning dari gen virus atau bakteri melalui rekombinasi DNA, vaksin vektor virus dan vaksin antiidiotipe. Contoh vaksin hepatitis B, Vaksin hemofilus influenza tipe b (Hib) dan vaksin Influenza.
+          </p>
+        </div>
+        <div class="col-lg-5 ml-5">
+          <div class="persegi-panjang3 p-right2"></div>
+          <img src="img/22.jpg" alt="gambar" width="340">
+        </div>
+        <div class="col-1"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="page5" class="page">
+    <div class="container my-4">
+      <div class="row">
+        <div class="col" style="margin-left: 100px">
+          <div class="persegi-panjang4 p-left3"></div>
+          <img src="img/23.jpg" alt="Gambar" width="310" >
+        </div>
+
+        <div class="col-lg-6 col-xl-7 mt-5 mt-lg-0" style="padding-right:60px;">
+          <h2 class="font-weight-bold">Vaksin Idiotipe</h2>  
+          <p class="mt-4">
+            Vaksin Idiotipe adalah vaksin yang dibuat berdasarkan sifat bahwa Fab (fragment antigen binding) dari antibodi yang dihasilkan oleh tiap klon sel B mengandung asam amino yang disebut sebagai idiotipe atau determinan idiotipe yang dapat bertindak sebagai antigen. Vaksin ini dapat menghambat pertumbuhan virus melalui netralisasai dan pemblokiran terhadap reseptor pre sel B. 
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="page6" class="page">
+    <div class="container" style="margin-right:0">
+      <div class="row">
+        <div class="col mr-4">
+          <h2 class="font-weight-bold">Vaksin Rekombinan</h2>  
+          <p class="mt-4">
+            Vaksin Rekombinan, vaksin ini memungkinkan produksi protein virus dalam jumlah besar. Gen virus yang diinginkan diekspresikan dalam sel prokariot atau eukariot. Sistem ekspresi eukariot meliputi sel bakteri E.coli, yeast, dan baculovirus. Dengan teknologi DNA rekombinan selain dihasilkan vaksin protein juga dihasilkan vaksin DNA. Penggunaan virus sebagai vektor untuk membawa gen sebagai antigen pelindung dari virus lainnya, misalnya gen untuk antigen dari berbagai virus disatukan ke dalam genom dari virus vaksinia dan imunisasi hewan dengan vaksin bervektor ini menghasilkan respon antibodi yang baik. Susunan vaksin ini (misal hepatitis B) memerlukan epitop organisme yang patogen. Sintesis dari antigen vaksin tersebut melalui isolasi dan penentuan kode gen epitop bagi sel penerima vaksin.
+          </p>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="persegi-panjang5 p-right3"></div>
+          <img src="img/12.jpg" alt="gambar">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="page7" class="page">
+    <div class="container">
+          <div class="row">
+            <div class="col" style="margin-left: 100px">
+              <div class="persegi-panjang6 p-left4"></div>
+              <img src="img/13.jpg" alt="gambar">
+            </div>
+
+            <div class="col-12 col-lg-6 col-xl-7 mt-5 mt-lg-0" style="padding-right:60px;">
+                <h2 class="font-weight-bold">Vaksin DNA (Plasmid DNA Vaccines)</h2>  
+                <p class="mt-4">
+                  Vaksin Rekombinan, vaksin ini memungkinkan produksi protein virus dalam jumlah besar. Gen virus yang diinginkan diekspresikan dalam sel prokariot atau eukariot. Sistem ekspresi eukariot meliputi sel bakteri E.coli, yeast, dan baculovirus. Dengan teknologi DNA rekombinan selain dihasilkan vaksin protein juga dihasilkan vaksin DNA. Penggunaan virus sebagai vektor untuk membawa gen sebagai antigen pelindung dari virus lainnya, misalnya gen untuk antigen dari berbagai virus disatukan ke dalam genom dari virus vaksinia dan imunisasi hewan dengan vaksin bervektor ini menghasilkan respon antibodi yang baik. Susunan vaksin ini (misal hepatitis B) memerlukan epitop organisme yang patogen. Sintesis dari antigen vaksin tersebut melalui isolasi dan penentuan kode gen epitop bagi sel penerima vaksin.
+                </p>
+            </div>
+        </div> 
+    </div> 
+  </section>
+
+
+
+  <footer style="background-color: #1A9CDA;">
+    <div class="container">
+      <div class="row text-center text-white">
+        <div class="col p-4">
+          &copy 2018 YUKIMUNISASI.ORG ALL RIGHTS RESERVED
+        </div>
+      </div>
+    </div>
+  </footer>
+    <!-- Optional JavaScript -->
+
+  <script type="text/javascript" src="js/jquery-3.2.1.slim.min.js"></script>
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script type="text/javascript" src="js/buatan.js"></script>
+
+  </body>
+</html>
+
+<script>
+  $(window).on('load', function(){
+    $('.p-left').addClass('tampil-gmbr1');
+  });
+  $(document).ready(function() {    
+    $(window).scroll(function() {
+      var var_scroll = $(this).scrollTop();
+      if (var_scroll > $('#page2').offset().top - 350){
+        $('.p-right').addClass('tampil-gmbr1');
+      };
+      if (var_scroll > $('#page3').offset().top - 350){
+        $('.p-left2').addClass('tampil-gmbr1');
+      };
+      if (var_scroll > $('#page4').offset().top - 350){
+        $('.p-right2').addClass('tampil-gmbr1');
+      };      
+      if (var_scroll > $('#page5').offset().top - 350){
+        $('.p-left3').addClass('tampil-gmbr1');
+      };     
+      if (var_scroll > $('#page6').offset().top - 350){
+        $('.p-right3').addClass('tampil-gmbr1');
+      };     
+      if (var_scroll > $('#page7').offset().top - 350){
+        $('.p-left4').addClass('tampil-gmbr1');
+      };
+    });
+  });
+</script>

@@ -1,0 +1,4 @@
+2018/06/21 19:41:54: info: btscanner starting
+2018/06/21 19:42:01: info: threader_start::pthread_create(): created thread -1798158592
+2018/06/21 19:43:16: info: threader_reap::pthread_join(): joined thread -1798158592
+2018/06/21 19:43:16: info: btscanner shutting down

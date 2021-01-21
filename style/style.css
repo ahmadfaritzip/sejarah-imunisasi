@@ -1,0 +1,126 @@
+body{
+	font-family: calibri;
+}
+
+/* start edit navbar */
+.navbar.navbar-expand-lg.navbar-light.p-2 a.navbar-brand{
+ 	margin-left: 120px;
+}
+
+.navbar-light .navbar-collapse ul.navbar-nav li a{
+	color: #0a3771;
+	border-bottom: solid 3px #1A9CDA;
+}
+
+.navbar.navbar-expand-lg.navbar-light li a:hover{
+	color: #fff;
+	border-bottom: solid 3px;
+}
+
+.ml-auto{
+	margin-right: 15%;
+}
+
+.nav-item{
+	margin-left: 50px;
+}
+	
+.navbar-brand{
+	margin-left: 70px;
+}
+
+/* end edit navbar */
+
+
+
+/* start edit page header */
+.d-block{
+	opacity: 0;
+	transform: translate(0, -200px);
+	transition: 2s;
+}
+.d-block.tampil-h{
+	opacity: 1;
+	transform: translate(0, 0);
+}
+/* end edit page header */
+
+
+
+/* start edit page vaksinasi */
+.p-left{
+	opacity: 0;
+	transform: translate(-100px,0);
+	transition: 2s;
+}
+.p-right{
+	opacity: 0;
+	transform: translate(100px,0);
+	transition: 2s;
+}
+
+.p-left.tampil-vaksinasi, .p-right.tampil-vaksinasi{
+	opacity: 1;
+	transform: translate(0,0);
+}
+/* end edit page vaksinasi */
+
+
+
+/* start edit image footer */
+.image-footer{
+	opacity: 0;
+	transition: 2s;
+	z-index: -1;
+}
+
+.image-footer.tampil-image-footer{
+	opacity: 1;
+}
+/* end edit image footer */
+
+
+
+
+
+/* start edit header footer */
+.caption {
+    position: absolute;
+    top: 75px;
+    left: -10%;
+    width: 100%;
+    z-index: 1;
+}
+
+@media (min-width: 300px) {  
+  p.caption {
+  	font-size:1rem;
+	top: 12px;
+  	} /*1rem = 16px*/
+}
+
+@media (min-width: 470px) {  
+  p.caption {
+  	font-size:2rem;
+	top: 40px;
+  	} /*1rem = 16px*/
+}
+ 
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {  
+  p.caption {
+  	font-size:3.4rem;
+	top: 55px;
+  	} /*1rem = 16px*/
+}
+ 
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  p.caption {font-size:4rem;} /*1rem = 16px*/
+}
+ 
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+  p.caption {font-size:65px;} /*1rem = 16px*/    
+}
+/* end edit header footer */
